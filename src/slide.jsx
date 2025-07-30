@@ -40,12 +40,12 @@ const Slide = ({ people }) => {
 
   const handleNext = () => {
     setIndex((prevIndex) => (prevIndex + 1) % people.length);
-    console.log('Next index:', (index + 1) % people.length);
+    // console.log('Next index:', (index + 1) % people.length);
   };
 
   const handlePrevious = () => {
     setIndex((prevIndex) => (prevIndex - 1 + people.length) % people.length);
-    console.log('Previous index:', (index - 1 + people.length) % people.length);
+    // console.log('Previous index:', (index - 1 + people.length) % people.length);
   };
   useEffect(() => {
     const clear = setTimeout(() => {
